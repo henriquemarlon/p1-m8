@@ -6,7 +6,7 @@ Para rodar a aplicação, performe o comando abaixo no seu terminal e digite:
 python chatbot.py
 ```
 
-  - Inferências como as abaixo apra a intenção A:
+  - Inferências como as abaixo para a intenção A:
     
 "Como posso atualizar meu cartão de crédito?", "Preciso mudar a forma de pagamento, o que fazer?", "Quero atualizar minhas informações de pagamento", "Método de pagamento desatualizado, como proceder para atualizar?"
 
