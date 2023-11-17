@@ -7,8 +7,8 @@ class Chatbot():
     def __init__(self):
 
         self.intentions = {
-            r'(hello|hi|hey|hi there|hiya)': 'greeting',
-            r'(bye|goodbye|see you)': 'farewell',
+            r'(Olá|oii)': 'greeting',
+            r'(tchau|até logo)': 'farewell',
             r'\b([cC]ar[tT]a?ã?o|[Pp]agamento)\b': 'Intenção A',
             r'\b([Pp]?e?d?i?d?o|[Ee]?n?t?r?e?g?a)\b': 'Intenção B',
         }
@@ -19,23 +19,20 @@ class Chatbot():
         print(f'OK! A intenção da pergunta foi {self.intention}')
 
     def end_chat(self):
-        print('Goodbye!')
+        print('Tchau!!')
         exit()
 
     def identify_intention(self, text):
         for expression, intention in self.intentions.items():
-            print(text)
             match = re.search(expression, text, re.IGNORECASE)
             if match:
-                print(expression)
-                print(intention)
                 return intention
         return None
 
     def perform_action(self, intention):
         if intention:
             if intention == 'greeting':
-                print('Hi Icarus! I am Daedalus your father. Where you want you go?')
+                print('Olá como vc está? Como eu posso te ajudar hoje?')
 
             elif intention == 'farewell':
                 return self.end_chat()
@@ -43,11 +40,11 @@ class Chatbot():
             else:
                 self.go_to()
         else:
-            print('Sorry, I did not understand what you said.')
+            print('Desculpa, não entendi o que vc disse')
 
     def start_conversation(self):
         while True:
-            text = input("You: ")
+            text = input("Você: ")
             self.intention = self.identify_intention(text)
             self.perform_action(self.intention)
 
