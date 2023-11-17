@@ -13,3 +13,7 @@ python chatbot.py
   - Inferências como as abaixo para a intenção B:
 
 "Onde vejo o status do meu pedido?", "Como faço para rastrear meu pedido?", "Quero saber onde está meu pedido, como faço?", "Status de entrega, como consultar?"
+
+
+Video de demonstração:
+
