@@ -17,3 +17,4 @@ python chatbot.py
 
 Video de demonstração:
 
+https://www.loom.com/share/3710dcc4a5984faebbbb29468b2238e9?sid=7efbc55a-10f1-49a6-a8c9-d93f478b3cbf
